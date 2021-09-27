@@ -57,7 +57,7 @@ let halfWidth;
 let ratio;
 let hexBG;
 let myColor;
-var key = config.SECRET_API_KEY;
+//var key = config.SECRET_API_KEY;
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
