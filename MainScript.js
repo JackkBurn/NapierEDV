@@ -416,7 +416,9 @@ function touchStarted() { // Locks Slider to the mouse X position on press of Sl
   hexvaluergb = bg.toString('#rrggbb');
   splithex = split(hexvaluergb, '#')
   colorValue = splithex[1];
-  urlArray = [config.SECRET_API_KEY, colorValue];  //tom API GOES HERE TOM Tom
+  //urlArray = [config.SECRET_API_KEY, colorValue];  
+  var urlAPl = 'https://api.thingspeak.com/update.json?api_key=FA0QBQX8PYLXN8UF&field1=';
+  urlArray = [urlAPl, colorValue];  
   url = join(urlArray, separator);
   httpDo(url,{method:'POST'});
   console.log(url);
